@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Display -->
+    <TextView
+        android:id="@+id/textViewScientificDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:gravity="end"
+        android:padding="10dp"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Scientific Button Grid -->
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridButtonsScientific"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        app:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Top Row: All buttons with layout_columnWeight -->
+        <Button
+            android:id="@+id/btnBackToBasic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Basic"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnHistorySci"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="History"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnClearSci"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnBackspaceSci"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backspace"
+            android:contentDescription="Backspace"
+            app:layout_columnWeight="1" />
+
+        <!-- Scientific function buttons -->
+        <Button
+            android:id="@+id/btnSin"
+            android:text="sin("
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnCos"
+            android:text="cos("
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnTan"
+            android:text="tan("
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnPow"
+            android:text="^"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnLog"
+            android:text="log("
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnLn"
+            android:text="ln("
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnSqrt"
+            android:text="sqrt("
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnPi"
+            android:text="3.1416"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnOpenParen"
+            android:text="("
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnCloseParen"
+            android:text=")"
+            app:layout_columnWeight="1" />
+
+        <!-- Equals button spans 2 columns -->
+        <Button
+            android:id="@+id/btnEqualsSci"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textSize="20sp"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
