@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1007451403403",
+    "firebase_url": "https://scientificcalculator-893aa-default-rtdb.firebaseio.com",
+    "project_id": "scientificcalculator-893aa",
+    "storage_bucket": "scientificcalculator-893aa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007451403403:android:1259eda51bcf03a442508e",
+        "android_client_info": {
+          "package_name": "edu.uga.cs.scientificcalculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMQcnx5xoAKlp-CjPiLMLDwKF9ADljjsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
